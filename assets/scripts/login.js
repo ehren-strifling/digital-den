@@ -3,18 +3,25 @@
 const loginPrompt = document.createElement("div");
 
 /**
+ * Opens the login prompt
+ * @param {Event} e 
+ */
+function openLoginPrompt(e) {
+  displayLoginPrompt();
+}
+/**
  * Called whenever the sign up button is pressed.
  * @param {Event} e 
  */
 function signup(e) {
-  return login(e);
+
 }
 /**
  * Called whenever the login button is pressed.
  * @param {Event} e 
  */
 function login(e) {
-  displayLoginPrompt();
+  
 }
 /**
  * Called when the login prompt should be closed
@@ -47,10 +54,28 @@ function createLoginPrompt() {
   let div = document.createElement("div");
   div.classList.add("login-prompt-div");
   loginPrompt.appendChild(div);
-  document.body.appendChild(loginPrompt);
   let h2 = document.createElement("h2");
   h2.innerHTML = "Login"
   div.appendChild(h2);
+  let username = document.createElement("input");
+  username.classList.add("login-prompt-input");
+  username.id = "login-prompt-username";
+  div.appendChild(username);
+  let password = document.createElement("input");
+  password.classList.add("login-prompt-input");
+  password.id = "login-prompt-password";
+  div.appendChild(password);
+  let signupButton = document.createElement("button");
+  signupButton.innerHTML = "Sign up";
+  signupButton.classList.add("login-prompt-button");
+  signupButton.addEventListener("click", signup);
+  div.appendChild(signupButton);
+  let loginButton = document.createElement("button");
+  loginButton.innerHTML = "Login";
+  loginButton.classList.add("login-prompt-button");
+  loginButton.addEventListener("click", signup);
+  div.appendChild(loginButton);
+  document.body.appendChild(loginPrompt);
 }
 
 createLoginPrompt();

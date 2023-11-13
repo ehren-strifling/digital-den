@@ -17,7 +17,7 @@
   background-color: #00000080;
   transition: background-color 0.25s linear;
 }
-#login-prompt .login-prompt-div {
+.login-prompt-div {
   margin-inline: auto;
 
   background-color: #FFFFFF;
