@@ -44,10 +44,13 @@ function removeLoginButtons() {
 function createLoginPrompt() {
   loginPrompt.id = "login-prompt";
   loginPrompt.onclick = removeLogin;
-  let rect = document.createElement("div");
-  rect.classList.add("login-prompt-div");
-  loginPrompt.appendChild(rect);
+  let div = document.createElement("div");
+  div.classList.add("login-prompt-div");
+  loginPrompt.appendChild(div);
   document.body.appendChild(loginPrompt);
+  let h2 = document.createElement("h2");
+  h2.innerHTML = "Login"
+  div.appendChild(h2);
 }
 
 createLoginPrompt();
