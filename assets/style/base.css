@@ -20,7 +20,7 @@ header {
     height: 15vh;
     overflow: hidden;
     box-sizing: border-box;
-    background-color: #5B2427;
+    background-color: #000;
 }
 
 .flexbox {
@@ -60,10 +60,12 @@ a {
     text-decoration: none;
     font-family: var(--app-font-nunito);
     color: #fff;
+    transition: width 0.3s;
 }
 
 a:hover {
-    border-bottom: 2px solid #fff;
+    color: #7ECF1E;
+    border-bottom: 3px solid #7ECF1E;
 }
 
 .search-div {
@@ -73,17 +75,22 @@ a:hover {
 }
 
 .search-div input {
-    background-color: #9e9696;
+    background-color: #fff;
     border-radius: 1em;
+    border: 4px solid transparent;
     height: 2.5em;
     width: 70%;
     background-image: url(../images/search.png);
     background-repeat: no-repeat;
     background-size: 1.3em;
-    background-position: 10px 8px;
+    background-position: 10px 5px;
     padding-left: 3em;
     font-family: var(--app-font-nunito);
     font-size: 15px;
+}
+
+.search-div input:focus {
+    border: 4px solid #7ECF1E;
 }
 
 .access-div {
