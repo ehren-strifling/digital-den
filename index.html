@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./assets/style/index.css" media="all">
         <link rel="shortcut icon" href="./assets/images/logo.png">
         <title>Home | Digital Den</title>
+        <script src="assets/scripts/login.js" defer></script>
     </head>
     <body>
         <header>
@@ -24,8 +25,8 @@
                     <input type="search" placeholder="Search">
                 </div>
                 <div class="access-div">
-                    <button class="sign-up">Sign Up</button>
-                    <button class="log-in">Log In</button>
+                    <button class="sign-up remove-on-login" onclick="signup()">Sign Up</button>
+                    <button class="log-in remove-on-login" onclick="login()">Log In</button>
                 </div>
             </div>
         </header>

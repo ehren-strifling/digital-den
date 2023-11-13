@@ -34,7 +34,7 @@ function removeLoginPrompt() {
 }
 
 function removeLoginButtons() {
-  [...document.getElementsByClassName("login")].forEach(e=>{
+  [...document.getElementsByClassName("remove-on-login")].forEach(e=>{
     e.style.display = "none";
   });
 }
