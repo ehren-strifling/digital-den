@@ -5,7 +5,11 @@
 
 :root{
     --app-body-bg:#13161c;
-    --app-font-nunito: "Nunito Sans", sans-serif;
+    --app-font-nunito: "Outfit", sans-serif;
+}
+
+body {
+  font-family: var(--app-font-nunito);
 }
 
 .container{
@@ -59,7 +63,6 @@ ul {
 
 a {
     text-decoration: none;
-    font-family: var(--app-font-nunito);
     color: #fff;
 }
 
@@ -83,7 +86,6 @@ a:hover {
     background-size: 1.3em;
     background-position: 10px 8px;
     padding-left: 3em;
-    font-family: var(--app-font-nunito);
     font-size: 15px;
 }
 
@@ -99,7 +101,6 @@ a:hover {
 .sign-up, .log-in {
     width: 7em; 
     height: 3em;
-    font-family: var(--app-font-nunito);
     border-radius: 1em;
 }
 
