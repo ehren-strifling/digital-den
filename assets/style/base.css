@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import url("./reset.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+:root{
+    --app-body-bg:#13161c;
+
+}
+
+.container{
+    width: min(100% - 30px,1080px);
+    margin-inline:auto;
+}
