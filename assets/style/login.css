@@ -1,1 +1,35 @@
 @charset "UTF-8";
+
+#login-prompt {
+  visibility:hidden;
+  display: flex;
+  align-items: center;
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  /* This could be replaced with a gradient later to make it look better*/
+  background-color: #00000000;
+}
+#login-prompt.active {
+  visibility:visible;
+  background-color: #00000080;
+  transition: background-color 0.25s linear;
+}
+#login-prompt .login-prompt-div {
+  margin-inline: auto;
+
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  width:600px;
+  height:400px;
+
+  position: relative;
+  top:-100px;
+  left:0px;
+}
+#login-prompt.active .login-prompt-div {
+  top: 0px;
+  transition: top 1s ease-out;
+}
