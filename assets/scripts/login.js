@@ -2,6 +2,7 @@
 
 const loginPrompt = document.createElement("div");
 
+
 /**
  * Opens the login prompt
  * @param {Event} e 
@@ -14,16 +15,47 @@ function openLoginPrompt(e) {
  * @param {Event} e 
  */
 function signup(e) {
-  removeLoginPrompt();
-  removeLoginButtons();
+  login(e);
+  //removeLoginPrompt();
+  //removeLoginButtons();
 }
 /**
  * Called whenever the login button is pressed.
  * @param {Event} e 
  */
 function login(e) {
-  removeLoginPrompt();
-  removeLoginButtons();
+  let username = loginPrompt.querySelector("#login-prompt-username").value;
+  let password = loginPrompt.querySelector("#login-prompt-password").value;
+  if (verifyUsername(username) && verifyPassword(password)) {
+    removeLoginPrompt();
+    removeLoginButtons();
+  }
+}
+
+/**
+ * @param {string} username 
+ * @returns {boolean}
+ */
+function verifyUsername(username) {
+  if (username.length>=4) {
+    loginPrompt.querySelector("#login-prompt-username-error").innerHTML = "";
+    return true; 
+  } else {
+    loginPrompt.querySelector("#login-prompt-username-error").innerHTML = "Invalid username: Must be longer than 4 characters.";
+  }
+  return false;
+}
+/**
+ * @param {string} password 
+ * @returns {boolean}
+ */
+function verifyPassword(password) {
+  if (password.length>=4) {
+    loginPrompt.querySelector("#login-prompt-password-error").innerHTML = "";
+    return true;
+  } else {
+    loginPrompt.querySelector("#login-prompt-password-error").innerHTML = "Invalid password: Must be longer than 4 characters.";
+  }
 }
 /**
  * Called when the login prompt should be closed
@@ -40,17 +72,28 @@ function displayLoginPrompt() {
 }
 function removeLoginPrompt() {
   loginPrompt.classList.remove("active");
+  loginPrompt.querySelector("#login-prompt-username").value = "";
+  loginPrompt.querySelector("#login-prompt-password").value = "";
+  loginPrompt.querySelector("#login-prompt-username-error").innerHTML = "";
+  loginPrompt.querySelector("#login-prompt-password-error").innerHTML = "";
 }
 
 function removeLoginButtons() {
   [...document.getElementsByClassName("remove-on-login")].forEach(e=>{
     e.style.display = "none";
   });
+  let accessDiv = document.querySelector("header .access-div");
+  if (accessDiv) {
+    accessDiv.style.display = "none";
+  }
 }
 
 
 
 function createLoginPrompt() {
+  //login event listeners. Add before we create new login button instances
+  [...document.getElementsByClassName("sign-up")].forEach(e=>e.addEventListener("click", openLoginPrompt));
+  [...document.getElementsByClassName("log-in")].forEach(e=>e.addEventListener("click", openLoginPrompt));
   loginPrompt.id = "login-prompt";
   loginPrompt.onclick = removeLogin;
 
@@ -68,11 +111,22 @@ function createLoginPrompt() {
   username.id = "login-prompt-username";
   div.appendChild(username);
 
+  let usernameError = document.createElement("p");
+  usernameError.classList.add("login-prompt-error");
+  usernameError.id = "login-prompt-username-error";
+  div.appendChild(usernameError);
+
   let password = document.createElement("input");
   password.placeholder = "Password";
+  password.type = "password";
   password.classList.add("login-prompt-input");
   password.id = "login-prompt-password";
   div.appendChild(password);
+
+  let passwordError = document.createElement("p");
+  passwordError.classList.add("login-prompt-error");
+  passwordError.id = "login-prompt-password-error";
+  div.appendChild(passwordError);
 
   let buttonDiv = document.createElement("div");
   buttonDiv.classList.add("login-prompt-button-div");

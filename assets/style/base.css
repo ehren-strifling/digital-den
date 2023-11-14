@@ -54,6 +54,7 @@ header {
 nav {
     order: 2;
     width: 31.3%;
+    margin-left:auto;
 }
 
 .menu-icon {
