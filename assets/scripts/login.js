@@ -36,14 +36,25 @@ function login(e) {
  * @returns {boolean}
  */
 function verifyUsername(username) {
-  return username.length>=4;
+  if (username.length>=4) {
+    loginPrompt.querySelector("#login-prompt-username-error").innerHTML = "";
+    return true; 
+  } else {
+    loginPrompt.querySelector("#login-prompt-username-error").innerHTML = "Invalid username: Must be longer than 4 characters.";
+  }
+  return false;
 }
 /**
  * @param {string} password 
  * @returns {boolean}
  */
 function verifyPassword(password) {
-  return password.length>=4;
+  if (password.length>=4) {
+    loginPrompt.querySelector("#login-prompt-password-error").innerHTML = "";
+    return true;
+  } else {
+    loginPrompt.querySelector("#login-prompt-password-error").innerHTML = "Invalid password: Must be longer than 4 characters.";
+  }
 }
 /**
  * Called when the login prompt should be closed
@@ -60,6 +71,10 @@ function displayLoginPrompt() {
 }
 function removeLoginPrompt() {
   loginPrompt.classList.remove("active");
+  loginPrompt.querySelector("#login-prompt-username").value = "";
+  loginPrompt.querySelector("#login-prompt-password").value = "";
+  loginPrompt.querySelector("#login-prompt-username-error").innerHTML = "";
+  loginPrompt.querySelector("#login-prompt-password-error").innerHTML = "";
 }
 
 function removeLoginButtons() {
