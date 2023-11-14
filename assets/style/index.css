@@ -9,7 +9,7 @@ main {
 
 .hero-banner {
     position: relative;
-    background-image: url(../images/ai-gen2.5.jpg);
+    background-image: url(../images/ai-gen2.jpg);
     height: 60rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ main {
 
 .hero-banner h3 {
     position: absolute;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 700;
     text-align: center;
     color: #fff;
@@ -29,14 +29,16 @@ main {
 
 .shop {
     position: absolute;
-    width: 140px;
-    height: 70px;
-    font-size: 26px;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
     text-align: center;
     top: 70%;
     left: 50%;
     transform: translate(-70%, -50%);
-    border-radius: 6px;
+    border-radius: 10px;
+    background-color: #0046BE;
+    color: #fff;
 }
 
 /*** Section for the 3 images ***/
@@ -69,5 +71,34 @@ figcaption {
     margin-top: 10px;
     font-size: 18px;
     border-radius: 5px;
-    color: #00ff;
+    color: #0046BE;
+}
+
+/***    Grid Section    ***/
+
+.grid {
+    display: grid;
+    gap: 50px 130px;
+    grid-template-columns: auto auto auto auto;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f1f1;
+}
+
+.grid img {
+    max-width: 14rem;
+    height: 14rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 0.4);
+}
+
+
+
+/*** Hover ***/
+
+.shop:hover {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: #003faa;
 }
