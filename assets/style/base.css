@@ -206,7 +206,7 @@ a:hover {
 }
 
 @media screen and (max-width: 803px) {
-    .sign-up, .log-in {
+    header .sign-up, header .log-in {
         display: none;
     }
 
