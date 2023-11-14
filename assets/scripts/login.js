@@ -14,14 +14,16 @@ function openLoginPrompt(e) {
  * @param {Event} e 
  */
 function signup(e) {
-
+  removeLoginPrompt();
+  removeLoginButtons();
 }
 /**
  * Called whenever the login button is pressed.
  * @param {Event} e 
  */
 function login(e) {
-  
+  removeLoginPrompt();
+  removeLoginButtons();
 }
 /**
  * Called when the login prompt should be closed
