@@ -14,16 +14,36 @@ function openLoginPrompt(e) {
  * @param {Event} e 
  */
 function signup(e) {
-  removeLoginPrompt();
-  removeLoginButtons();
+  login(e);
+  //removeLoginPrompt();
+  //removeLoginButtons();
 }
 /**
  * Called whenever the login button is pressed.
  * @param {Event} e 
  */
 function login(e) {
-  removeLoginPrompt();
-  removeLoginButtons();
+  let username = loginPrompt.querySelector("#login-prompt-username").value;
+  let password = loginPrompt.querySelector("#login-prompt-password").value;
+  if (verifyUsername(username) && verifyPassword(password)) {
+    removeLoginPrompt();
+    removeLoginButtons();
+  }
+}
+
+/**
+ * @param {string} username 
+ * @returns {boolean}
+ */
+function verifyUsername(username) {
+  return username.length>=4;
+}
+/**
+ * @param {string} password 
+ * @returns {boolean}
+ */
+function verifyPassword(password) {
+  return password.length>=4;
 }
 /**
  * Called when the login prompt should be closed
@@ -68,11 +88,22 @@ function createLoginPrompt() {
   username.id = "login-prompt-username";
   div.appendChild(username);
 
+  let usernameError = document.createElement("p");
+  usernameError.classList.add("login-prompt-error");
+  usernameError.id = "login-prompt-username-error";
+  div.appendChild(usernameError);
+
   let password = document.createElement("input");
   password.placeholder = "Password";
+  password.type = "password";
   password.classList.add("login-prompt-input");
   password.id = "login-prompt-password";
   div.appendChild(password);
+
+  let passwordError = document.createElement("p");
+  passwordError.classList.add("login-prompt-error");
+  passwordError.id = "login-prompt-password-error";
+  div.appendChild(passwordError);
 
   let buttonDiv = document.createElement("div");
   buttonDiv.classList.add("login-prompt-button-div");
