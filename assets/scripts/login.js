@@ -80,6 +80,7 @@ function removeLoginPrompt() {
 function removeLoginButtons() {
   [...document.getElementsByClassName("remove-on-login")].forEach(e=>{
     e.style.display = "none";
+    document.querySelector("header .access-div").style.display = "none";
   });
 }
 
