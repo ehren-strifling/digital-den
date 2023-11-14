@@ -60,23 +60,30 @@ function createLoginPrompt() {
   h2.innerHTML = "Login"
   div.appendChild(h2);
   let username = document.createElement("input");
+  username.placeholder = "Username";
   username.classList.add("login-prompt-input");
   username.id = "login-prompt-username";
   div.appendChild(username);
   let password = document.createElement("input");
+  password.placeholder = "Password";
   password.classList.add("login-prompt-input");
   password.id = "login-prompt-password";
   div.appendChild(password);
+  let buttonDiv = document.createElement("div");
+  buttonDiv.classList.add("login-prompt-button-div");
+  div.appendChild(buttonDiv);
   let signupButton = document.createElement("button");
   signupButton.innerHTML = "Sign up";
   signupButton.classList.add("login-prompt-button");
+  signupButton.classList.add("sign-up");
   signupButton.addEventListener("click", signup);
-  div.appendChild(signupButton);
+  buttonDiv.appendChild(signupButton);
   let loginButton = document.createElement("button");
   loginButton.innerHTML = "Login";
   loginButton.classList.add("login-prompt-button");
+  loginButton.classList.add("log-in");
   loginButton.addEventListener("click", signup);
-  div.appendChild(loginButton);
+  buttonDiv.appendChild(loginButton);
   document.body.appendChild(loginPrompt);
 }
 

@@ -21,6 +21,8 @@
   margin-inline: auto;
 
   background-color: #FFFFFF;
+  border: 1px solid #000000;
+  /* Check how to make a shadow here */
   border-radius: 25px;
   width:600px;
   height:400px;
@@ -36,4 +38,25 @@
 #login-prompt h2 {
   text-align: center;
   margin-top:40px;
+  font-size: 32px;
+}
+
+.login-prompt-input {
+  display:block;
+  margin-inline: auto;
+  border: 1px solid #0000FF;
+  margin-top:20px;
+  width:384px;
+  height:40px;
+  font-size:16px;
+  padding-left:12px;
+}
+
+.login-prompt-button-div {
+  margin-top:40px;
+}
+.login-prompt-button {
+}
+.login-prompt-button + .login-prompt-button {
+  margin-left: 32px;
 }
