@@ -23,6 +23,7 @@
   background-color: #FFFFFF;
   border: 1px solid #000000;
   /* Check how to make a shadow here */
+  box-shadow: 0px 4px 8px 0 #00000038;
   border-radius: 25px;
   width:600px;
   height:400px;
@@ -53,10 +54,22 @@
 }
 
 .login-prompt-button-div {
-  margin-top:40px;
+  margin-top:32px;
+  justify-content: center;
+  display: flex;
 }
-.login-prompt-button {
+.sign-up.login-prompt-button, .log-in.login-prompt-button {
+  font-size: 20px;
+  height: 2.5em
 }
 .login-prompt-button + .login-prompt-button {
   margin-left: 32px;
+}
+
+.login-prompt-forgot {
+  margin-top:36px;
+  color: #0000FF;
+  text-decoration: underline;
+  display:block;
+  text-align: center;
 }
