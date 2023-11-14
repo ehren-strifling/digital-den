@@ -9,8 +9,8 @@ main {
 
 .hero-banner {
     position: relative;
-    background-image: url(../images/collage.jpg);
-    height: 50rem;
+    background-image: url(../images/ai-gen2.5.jpg);
+    height: 60rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@ main {
 
 .hero-banner h3 {
     position: absolute;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 700;
     text-align: center;
     color: #fff;
@@ -33,15 +33,15 @@ main {
     height: 70px;
     font-size: 26px;
     text-align: center;
-    top: 80%;
+    top: 70%;
     left: 50%;
-    transform: translate(-80%, -50%);
+    transform: translate(-70%, -50%);
     border-radius: 6px;
 }
 
 /*** Section for the 3 images ***/
 
-.display h3 {
+.container h3 {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
@@ -69,5 +69,5 @@ figcaption {
     margin-top: 10px;
     font-size: 18px;
     border-radius: 5px;
-    color: blue;
+    color: #00ff;
 }
