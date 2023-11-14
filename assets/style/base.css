@@ -20,17 +20,18 @@ header {
     height: 15vh;
     overflow: hidden;
     box-sizing: border-box;
-    background-color: #000;
+    background-color: #88D1E4;
 }
 
 .flexbox {
     display: flex;
-    width: calc(100% - 5em);
+    width: min(100% - 4em);
+    margin-inline: auto;
 }
 
 .logo {
-    width: 26.3%;
-    max-height: 15vh;
+    width: 20.3%;
+    height: 15vh;
     display: grid;
     place-items: center;
     box-sizing: border-box;
@@ -38,13 +39,13 @@ header {
 }
 
 .logo img {
-    width: 7em;
-    height: 7em;
-    zoom: 110%;
+    width: 8em;
+    height: 6em;
+    zoom: 70%;
 }
 
 nav {
-    width: 25.3%;
+    width: 31.3%;
 }
 
 ul {
@@ -59,7 +60,7 @@ ul {
 a {
     text-decoration: none;
     font-family: var(--app-font-nunito);
-    color: #fff;
+    color: #000;
     transition: width 0.3s;
 }
 
@@ -77,7 +78,7 @@ a:hover {
 .search-div input {
     background-color: #fff;
     border-radius: 1em;
-    border: 4px solid transparent;
+    border: 3px solid transparent;
     height: 2.5em;
     width: 70%;
     background-image: url(../images/search.png);
@@ -90,7 +91,7 @@ a:hover {
 }
 
 .search-div input:focus {
-    border: 4px solid #7ECF1E;
+    border: 3px solid #7ECF1E;
 }
 
 .access-div {
@@ -115,4 +116,12 @@ a:hover {
 
 .log-in {
     background: #0000ff;
+}
+
+/*------------------------------*/
+/*----- RESPONSIVE DESIGN ------*/
+/*------------------------------*/
+
+@media screen and (max-width: 835px) {
+    
 }
