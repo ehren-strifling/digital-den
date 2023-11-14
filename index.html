@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <meta name="v1ewport" content="width=device-width, initial-scale=1">
+        <meta name="v1ewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Joseph Terrado: Web developer">
         <meta name="keywords" content="web developer, web, developer, front-end, html, css, javascript, react, sql">
         <link rel="stylesheet" href="./assets/style/index.css" media="all">
@@ -12,9 +12,10 @@
     </head>
     <body>
         <header>
-            <div class="container flexbox">
+            <div class="flexbox">
                 <div class="logo"><img src="./assets/images/logo.png" alt="webpage logo"></div>
                 <nav>
+                    <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./product.html">Products</a></li>
@@ -22,9 +23,11 @@
                     </ul>
                 </nav>
                 <div class="search-div">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
                     <input type="search" placeholder="Search">
                 </div>
                 <div class="access-div">
+                    <div class="user-icon-div"><div><i class="fa-regular fa-user"></i></div></div>
                     <button class="sign-up remove-on-login" onclick="openLoginPrompt()">Sign up</button>
                     <button class="log-in remove-on-login" onclick="openLoginPrompt()">Login</button>
                 </div>

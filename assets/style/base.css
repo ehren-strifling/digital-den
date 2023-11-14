@@ -26,17 +26,19 @@ header {
     height: 15vh;
     overflow: hidden;
     box-sizing: border-box;
-    background-color: #5B2427;
+    background-color: #88D1E4;
 }
 
 .flexbox {
     display: flex;
-    width: calc(100% - 5em);
+    width: min(100% - 4em);
+    margin-inline: auto;
 }
 
 .logo {
-    width: 26.3%;
-    max-height: 15vh;
+    order: 1;
+    width: 20.3%;
+    height: 15vh;
     display: grid;
     place-items: center;
     box-sizing: border-box;
@@ -44,13 +46,18 @@ header {
 }
 
 .logo img {
-    width: 7em;
-    height: 7em;
-    zoom: 110%;
+    width: 8em;
+    height: 6em;
+    zoom: 70%;
 }
 
 nav {
-    width: 25.3%;
+    order: 2;
+    width: 31.3%;
+}
+
+.menu-icon {
+    display: none;
 }
 
 ul {
@@ -64,33 +71,58 @@ ul {
 
 a {
     text-decoration: none;
-    color: #fff;
+    font-family: var(--app-font-nunito);
+    color: #000;
+    transition: width 0.3s;
 }
 
 a:hover {
-    border-bottom: 2px solid #fff;
+    color: #7ECF1E;
+    border-bottom: 3px solid #7ECF1E;
 }
 
 .search-div {
+    order: 3;
     width: 26.65%;
     display: grid;
     place-items: center;
 }
 
+.search-div div {
+    display: none;
+    height: 2.85em;
+    width: 2.85em;
+    background-color: #fff;
+    place-items: center;
+    border-radius: 1.1em;
+    cursor: pointer;
+}
+
+.search-div i {
+    font-size: 1em;
+    color: #0a0aa6;
+}
+
 .search-div input {
-    background-color: #9e9696;
+    background-color: #fff;
     border-radius: 1em;
+    border: 3px solid transparent;
     height: 2.5em;
     width: 70%;
     background-image: url(../images/search.png);
     background-repeat: no-repeat;
     background-size: 1.3em;
-    background-position: 10px 8px;
+    background-position: 10px 5px;
     padding-left: 3em;
     font-size: 15px;
 }
 
+.search-div input:focus {
+    border: 3px solid #7ECF1E;
+}
+
 .access-div {
+    order: 4;
     width: 21.75%;
     height: 15vh;
     display: flex;
@@ -106,10 +138,104 @@ a:hover {
     color: #FFF;
 }
 
+.user-icon-div {
+    display: none;
+    place-items: center;
+    height: 15vh;
+}
+
+.user-icon-div div {
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    border: 3px solid #ffff14;
+    cursor: pointer;
+}
+
+.user-icon-div i {
+    color: #ffff14;
+    font-size: 1.25em;
+}
+
 .sign-up {
     background: #008000;
 }
 
 .log-in {
     background: #0000ff;
+}
+
+/*------------------------------*/
+/*----- RESPONSIVE DESIGN ------*/
+/*------------------------------*/
+
+@media screen and (max-width: 835px) {
+    ul {
+        display: none;
+    }
+
+    nav {
+        width: 14.3%;
+        order: 3;
+    }
+
+    .menu-icon {
+        height: 15vh;
+        display: block;
+        display: grid;
+        place-items: center;
+    }
+
+    .menu-icon i {
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .search-div {
+        width: 43.65%;
+        order: 2;
+    }
+
+    .search-div input {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 803px) {
+    .sign-up, .log-in {
+        display: none;
+    }
+
+    .access-div {
+        width: 14.3%;
+    }
+
+    .search-div {
+        width: 51%;
+    }
+
+    .user-icon-div {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    nav, .access-div, .search-div {
+        width: 15%;
+    }
+
+    .logo {
+        width: 55%;
+    }
+
+    .search-div div {
+        display: grid;
+    }
+
+    .search-div input {
+        display: none;
+    }
 }
