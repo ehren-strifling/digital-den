@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(./base.css);
+@import url(./reset.css);
 
 
 main {
@@ -8,8 +9,8 @@ main {
 
 .hero-banner {
     position: relative;
-    background-image: url(../images/tech.jpg);
-    height: 40rem;
+    background-image: url(../images/collage.jpg);
+    height: 45rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,4 +25,16 @@ h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.shop {
+    position: absolute;
+    width: 140px;
+    height: 70px;
+    font-size: 26px;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    border-radius: 6px;
 }
