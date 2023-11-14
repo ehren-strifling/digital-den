@@ -1,1 +1,63 @@
 @charset "UTF-8";
+@import url("./base.css");
+
+
+.row{
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column{
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #fff
+}
+
+.product-image {
+    width: 60%;
+}
+
+.product-overview {
+    width: 40%;
+}
+
+.product-image figure img{
+    height: 540px;
+    width: 78%;
+    border-radius: 15px;
+}
+
+
+.product-image div{
+    top:43%;
+    background-color:var(--white-bg-color);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 2px #e6e6e6, -2px 2px #e6e6e6;
+    cursor: pointer;
+
+/*box-shadow:  -2px 2px ;*/
+}
+
+
+
+.product-image i{
+    font-size: 30px;
+}
+
+.product-image .left-arrow{
+    position: absolute;
+    right: 75%;
+}
+
+.product-image .right-arrow{
+    position: absolute;
+    right: 45.2%;
+}

@@ -7,6 +7,7 @@
 :root{
     --app-body-bg:#13161c;
     --app-font: "Outfit", sans-serif;
+    --white-bg-color:#fff;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 }
 
 .container{
-    width: min(100% - 30px,1080px);
+    width: min(100% - 40px,1080px);
     margin-inline:auto;
 }
 
