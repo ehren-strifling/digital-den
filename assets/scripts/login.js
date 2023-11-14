@@ -2,6 +2,7 @@
 
 const loginPrompt = document.createElement("div");
 
+
 /**
  * Opens the login prompt
  * @param {Event} e 
@@ -87,6 +88,9 @@ function removeLoginButtons() {
 
 
 function createLoginPrompt() {
+  //login event listeners. Add before we create new login button instances
+  [...document.getElementsByClassName("sign-up")].forEach(e=>e.addEventListener("click", openLoginPrompt));
+  [...document.getElementsByClassName("log-in")].forEach(e=>e.addEventListener("click", openLoginPrompt));
   loginPrompt.id = "login-prompt";
   loginPrompt.onclick = removeLogin;
 
