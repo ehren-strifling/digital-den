@@ -10,7 +10,7 @@ main {
 .hero-banner {
     position: relative;
     background-image: url(../images/collage.jpg);
-    height: 45rem;
+    height: 50rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,4 +37,31 @@ h3 {
     left: 50%;
     transform: translate(-80%, -50%);
     border-radius: 6px;
+}
+
+/*** Section for the 3 images ***/
+
+.display {
+    display: flex;
+    margin-top: 140px;
+    height: 45rem;
+    gap: 15px;
+}
+
+.sale {
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+    height: 30rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 0.2);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: blue;
 }
