@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+#login-prompt {
+  visibility:hidden;
+  display: flex;
+  align-items: center;
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  /* This could be replaced with a gradient later to make it look better*/
+  background-color: #00000000;
+}
+#login-prompt.active {
+  visibility:visible;
+  background-color: #00000080;
+  transition: background-color 0.25s linear;
+}
+.login-prompt-div {
+  margin-inline: auto;
+
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  /* Check how to make a shadow here */
+  box-shadow: 0px 4px 8px 0 #00000038;
+  border-radius: 25px;
+  width:600px;
+  height:400px;
+
+  position: relative;
+  top:-100px;
+  left:0px;
+}
+#login-prompt.active .login-prompt-div {
+  top: 0px;
+  transition: top 1s ease-out;
+}
+#login-prompt h2 {
+  text-align: center;
+  margin-top:40px;
+  font-size: 32px;
+}
+
+.login-prompt-input {
+  display:block;
+  margin-inline: auto;
+  border: 1px solid #0000FF;
+  margin-top:20px;
+  width:384px;
+  height:40px;
+  font-size:16px;
+  padding-left:12px;
+}
+
+.login-prompt-button-div {
+  margin-top:32px;
+  justify-content: center;
+  display: flex;
+}
+.sign-up.login-prompt-button, .log-in.login-prompt-button {
+  font-size: 20px;
+  height: 2.5em
+}
+.login-prompt-button + .login-prompt-button {
+  margin-left: 32px;
+}
+
+.login-prompt-forgot {
+  margin-top:36px;
+  color: #0000FF;
+  text-decoration: underline;
+  display:block;
+  text-align: center;
+}
