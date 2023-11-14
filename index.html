@@ -9,6 +9,7 @@
         <link rel="shortcut icon" href="./assets/images/logo.png">
         <title>Home | Digital Den</title>
         <script src="assets/scripts/login.js" defer></script>
+        <script src="assets/scripts/column-menu.js" defer></script>
     </head>
     <body>
         <header>
@@ -16,6 +17,13 @@
                 <div class="logo"><img src="./assets/images/logo.png" alt="webpage logo"></div>
                 <nav>
                     <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+                    <div class="display-menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./product.html">Products</a></li>
+                            <li><a href="">About Us</a></li>
+                        </ul>
+                    </div>
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./product.html">Products</a></li>
@@ -23,13 +31,18 @@
                     </ul>
                 </nav>
                 <div class="search-div">
-                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
-                    <input type="search" placeholder="Search">
+                    <div class="loupe"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="search" placeholder="Search" class="search1">
+                    <div class="display-input"><input type="search" placeholder="Search" class="search2"></div>
                 </div>
                 <div class="access-div">
                     <div class="user-icon-div"><div><i class="fa-regular fa-user"></i></div></div>
-                    <button class="sign-up remove-on-login" onclick="openLoginPrompt()">Sign up</button>
                     <button class="log-in remove-on-login" onclick="openLoginPrompt()">Login</button>
+                    <button class="sign-up remove-on-login" onclick="openLoginPrompt()">Sign up</button>
+                    <div class="display-account-buttons">
+                        <button class="log-in remove-on-login" onclick="openLoginPrompt()">Login</button>
+                        <button class="sign-up remove-on-login" onclick="openLoginPrompt()">Sign up</button>
+                    </div>
                 </div>
             </div>
         </header>
