@@ -131,19 +131,19 @@ function createLoginPrompt() {
   let buttonDiv = document.createElement("div");
   buttonDiv.classList.add("login-prompt-button-div");
   
-  let signupButton = document.createElement("button");
-  signupButton.innerHTML = "Sign up";
-  signupButton.classList.add("login-prompt-button");
-  signupButton.classList.add("sign-up");
-  signupButton.addEventListener("click", signup);
-  buttonDiv.appendChild(signupButton);
-
   let loginButton = document.createElement("button");
   loginButton.innerHTML = "Login";
   loginButton.classList.add("login-prompt-button");
   loginButton.classList.add("log-in");
   loginButton.addEventListener("click", signup);
   buttonDiv.appendChild(loginButton);
+  
+  let signupButton = document.createElement("button");
+  signupButton.innerHTML = "Sign up";
+  signupButton.classList.add("login-prompt-button");
+  signupButton.classList.add("sign-up");
+  signupButton.addEventListener("click", signup);
+  buttonDiv.appendChild(signupButton);
 
   div.appendChild(buttonDiv);
 
