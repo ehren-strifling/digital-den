@@ -310,15 +310,15 @@ h3 {
 /*----- RESPONSIVE DESIGN ------*/
 /*------------------------------*/
 
-@media screen and (max-width: 881px) {
+@media screen and (max-width: 897px) {
     header {
         overflow: visible;
     }
 
     .display-menu {
         position: relative;
-        bottom: -1em;
-        right: 4em;
+        top: 1em;
+        right: -1em;
         margin-right: min(8em);
     }
 
@@ -453,16 +453,16 @@ h3 {
     }
 }
 
-@media screen and (max-width: 768px) {
-    
-}
-
 @media screen and (max-width: 526px) {
     .logo {
         width: 40%;
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
+    }
+
+    .logo img {
+        zoom: 50%;
     }
 
     nav, .access-div, .search-div {
@@ -526,14 +526,20 @@ h3 {
     }
 }
 
-@media screen and (max-width: 410px), (max-height: 600px) {
+@media screen and (max-width: 410px) {
     header {
-        height: 18vh;
+        height: 15vh;
     }
 
     .flexbox {
         width: min(100% - 2em);
-        height: 18vh;
+        height: 15vh;
+    }
+
+    .display-menu {
+        position: fixed;
+        top: 8em;
+        right: -4.5em;
     }
 
     .logo {
@@ -541,12 +547,13 @@ h3 {
         display: flex;
         align-items: center;
         justify-content: start;
-        height: 18vh;
+        padding-left: 1em;
+        height: 15vh;
     }
 
     nav, .access-div, .search-div {
         width: 20%;
-        height: 18vh;
+        height: 15vh;
     }
 
     nav {
@@ -564,5 +571,42 @@ h3 {
 
     .suscription-div input[type=submit] {
         width: 5em;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .display-menu {
+        top: 6em;
+    }
+
+    .display-input {
+        top: 6em;
+    }
+
+    .display-account-buttons {
+        top: 6em;
+        right: 1.5em;
+    }
+
+    .suscription-div input[type=text] {
+        width: 13em;
+    }
+
+    .suscription-div input[type=submit] {
+        width: 5em;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    header {
+        height: 18vh;
+    }
+
+    .flexbox, .logo, nav, .search-div, .access-div, .menu-icon {
+        height: 18vh;
+    }
+
+    .flexbox {
+        width: min(100% - 2em);
     }
 }
