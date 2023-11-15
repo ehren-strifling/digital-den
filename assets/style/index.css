@@ -20,7 +20,7 @@ main {
     background-size: cover;
 }
 
-h2 {
+.h2 {
     position: absolute;
     font-size: 38px;
     font-weight: 700;
@@ -202,7 +202,7 @@ span {
         grid-template-columns: repeat(2, 1fr);
         height: 100%;
     }
-    h2 {
+    .h2 {
         width: 100%;
     }
 }
