@@ -19,6 +19,7 @@ function onEvent (selector, event, callback) {
 const listBtn = select('.display-menu')
 const menu = select('.menu-icon i')
 const divInput = select('.display-input')
+const input = select('.display-input .search2')
 const loupe = select('.loupe')
 const userIcon = select('.user-icon-div div')
 const divAccount = select('.display-account-buttons')
@@ -26,7 +27,6 @@ const divAccount = select('.display-account-buttons')
 function hideElementOnClickOutside(element, callback) {
     onEvent(document, 'click', (event) => {
         if (!element.contains(event.target)) {
-            
             callback();
         }
     });
@@ -75,6 +75,5 @@ onEvent(window, 'load', () => {
 onEvent(menu, 'click', hideElementOnClickOutside(menu, () => {listBtn.style.display = 'none'}))
 onEvent(menu, 'click', displayMenu)
 onEvent(loupe, 'click', displayInput)
-onEvent(loupe, 'click', hideElementOnClickOutside(loupe, () => {divInput.style.display = 'none'}))
 onEvent(userIcon, 'click', displayAccount)
 onEvent(userIcon, 'click', hideElementOnClickOutside(userIcon, () => {divAccount.style.display = 'none'}))
