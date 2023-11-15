@@ -1,5 +1,4 @@
 @charset "UTF-8";
-<<<<<<< HEAD
 @import url(./base.css);
 @import url(./reset.css);
 
@@ -207,6 +206,4 @@ h4 {
         width: 100%;
     }
 }
-=======
-@import url(./base.css)
->>>>>>> acd6a4751e6b306462de227f5d906da85a259ab8
+
