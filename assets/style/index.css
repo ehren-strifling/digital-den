@@ -58,7 +58,6 @@ main {
 
 .display {
     display: flex;
-    height: 45rem;
     gap: 15px;
 }
 
@@ -197,9 +196,6 @@ span {
     }
     .display {
         flex-wrap: wrap;
-    }
-    .h4 {
-        margin-top: 82rem;
     }
     .grid {
         grid-template-columns: repeat(2, 1fr);

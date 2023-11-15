@@ -287,6 +287,46 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 1.7em;
+
+    /* width:max-content;
+    margin-inline: auto; */
+}
+
+.social-media-icons a {
+  color: inherit;
+}
+
+.social-media-icons a i {
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.social-media-icons a i:hover {
+  color: #0000ff;
+}
+
+.social-media-icons a:hover i.fa-facebook {
+  color: #0866ff;
+}
+
+.social-media-icons a:hover i.fa-instagram {
+  color: #ed00be;
+}
+
+.social-media-icons a:hover i.fa-x-twitter {
+  color: #1da1f2;
+}
+
+.social-media-icons a:hover i.fa-pinterest {
+  color: #e60023;
+}
+
+.social-media-icons a:hover i.fa-youtube {
+  color: #ff0000;
+}
+
+.social-media-icons a:hover i.fa-linkedin {
+  color: #0a66c2;
 }
 
 .social-media-icons i {
