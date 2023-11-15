@@ -141,7 +141,7 @@
 }
 
 .product-specifications{
-    background-color: #d3d3d3;
+    background-color: #f2f2f2;
 }
 
 .product-specifications h3{
@@ -168,4 +168,17 @@ section{
 
 .table td:nth-child(odd){
     background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.product-specifications-tables{
+    padding: 60px;
+}
+
+.product-specifications-tables div {
+    margin-bottom: 40px;
+}
+
+.product-specifications-tables div h2{
+    margin-bottom: 20px;
 }
