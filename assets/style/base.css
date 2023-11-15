@@ -16,6 +16,7 @@ body {
 .container{
     width: min(100% - 30px,1080px);
     margin-inline:auto;
+    padding: 1em 0.5em;
 }
 
 /*------------------------------*/
@@ -187,10 +188,129 @@ nav a:hover {
 }
 
 /*------------------------------*/
+/*------------ MAIN ------------*/
+/*------------------------------*/
+
+main {
+    height: 100vh;
+}
+
+/*------------------------------*/
+/*---------- FOOTER ------------*/
+/*------------------------------*/
+
+footer {
+    background-color: #F0F0F0;
+    min-height: 15vh;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-help-section {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-right: 1px solid;
+}
+
+.list-user-section {
+    flex-grow: 1;
+    flex-basis: 30%;
+    padding: 8px; 
+}
+
+.list-user-section ul {
+    list-style: none;
+    padding: 1em 0;
+    width: 100%;
+}
+
+.list-user-section li {
+    margin-bottom: 0.8em;
+    text-align: left;
+    font-size: 14px;
+}
+
+.list-user-section a {
+    text-decoration: none;
+    color: #000;
+}
+
+.list-user-section a:hover {
+    color: #88D1E4;
+    border-bottom: 1px solid #88D1E4;
+}
+
+h3 {
+    height: 1.5em;
+}
+
+.user-contact-section {
+    width: 30%;
+}
+
+.suscription-div {
+    padding: 8px 24px 24px;
+    height: 50%;
+}
+
+.suscription-div h4 {
+    margin-bottom: 1em;
+}
+
+.suscription-div p {
+    font-size: 12px;
+    margin-bottom: 2em;
+}
+
+.suscription-div input {
+    height: 3em;
+}
+
+.suscription-div form {
+    margin-bottom: 2em;
+}
+
+.suscription-div input[type=text] {
+    padding-left: 1em;
+    border: 1px solid transparent;
+}
+
+.suscription-div input[type=text]:focus {
+    border: 1px solid #000;
+}
+
+.suscription-div input[type=submit] {
+    background-color: #88D1E4;
+    width: 5em;
+    position: relative;
+    left: -3px;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.7em;
+}
+
+.social-media-icons i {
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.fa-arrow-down {
+    display: none;
+}
+
+/*------------------------------*/
 /*----- RESPONSIVE DESIGN ------*/
 /*------------------------------*/
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 881px) {
     header {
         overflow: visible;
     }
@@ -215,7 +335,7 @@ nav a:hover {
         border: 2px solid #000;
     }
 
-    li {
+    nav li {
         height: 2em;
         width: 6em;
         display: grid;
@@ -223,7 +343,7 @@ nav a:hover {
         border-radius: 1em;
     }
 
-    li:hover {
+    nav li:hover {
         background-color: #88D1E4;
     }
 
@@ -260,6 +380,29 @@ nav a:hover {
 
     .search-div input {
         width: 90%;
+    }
+
+    .flex-footer {
+        flex-direction: column;
+    }
+
+    .user-help-section {
+        width: 100%;
+        border-right: transparent;
+        border-bottom: 1px solid;
+        margin-bottom: 3em;
+    }
+
+    .user-contact-section {
+        width: 100%;
+    }
+
+    .suscription-div input[type=text] {
+        width: 30em;
+    }
+
+    .suscription-div input[type=submit] {
+        width: 7em;
     }
 }
 
@@ -306,6 +449,10 @@ nav a:hover {
     }
 }
 
+@media screen and (max-width: 768px) {
+    
+}
+
 @media screen and (max-width: 526px) {
     .logo {
         width: 40%;
@@ -346,6 +493,17 @@ nav a:hover {
 
     .search-div .search1 {
         display: none;
+    }
+
+    .user-help-section {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .list-user-section {
+        flex-basis: 0;
+        width: 100%;
+        flex-grow: 0;
     }
 }
 
