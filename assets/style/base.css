@@ -7,6 +7,7 @@
 :root{
     --app-body-bg:#13161c;
     --app-font: "Outfit", sans-serif;
+    --white-bg-color:#fff;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 }
 
 .container{
-    width: min(100% - 30px,1080px);
+    width: min(100% - 20em);
     margin-inline:auto;
     padding: 1em 0.5em;
 }
@@ -187,6 +188,15 @@ nav a:hover {
 .log-in {
     background: #03045E;
 }
+<<<<<<< HEAD
+
+/*------------------------------*/
+/*------------ MAIN ------------*/
+/*------------------------------*/
+
+
+=======
+>>>>>>> main
 /*------------------------------*/
 /*---------- FOOTER ------------*/
 /*------------------------------*/
