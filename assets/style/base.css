@@ -55,6 +55,7 @@ header {
 nav {
     order: 2;
     width: 31.3%;
+    margin-left:auto;
 }
 
 .display-menu {
@@ -407,11 +408,7 @@ h3 {
 }
 
 @media screen and (max-width: 803px) {
-    .access-div .sign-up {
-        display: none;
-    }
-
-    .access-div .log-in {
+    header .sign-up, header .log-in {
         display: none;
     }
 
