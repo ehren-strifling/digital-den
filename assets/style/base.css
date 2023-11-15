@@ -7,6 +7,7 @@
 :root{
     --app-body-bg:#13161c;
     --app-font: "Outfit", sans-serif;
+    --white-bg-color:#fff;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 }
 
 .container{
-    width: min(100% - 30px,1080px);
+    width: min(100% - 20em);
     margin-inline:auto;
     padding: 1em 0.5em;
 }
@@ -188,14 +189,9 @@ nav a:hover {
     background: #03045E;
 }
 
-/*------------------------------*/
-/*------------ MAIN ------------*/
-/*------------------------------*/
-
 main {
-    height: 100vh;
+    overflow: hidden;
 }
-
 /*------------------------------*/
 /*---------- FOOTER ------------*/
 /*------------------------------*/
@@ -206,6 +202,7 @@ footer {
 }
 
 .flex-footer {
+    width: min(100% - 4em);
     display: flex;
     flex-direction: row;
 }
@@ -246,7 +243,7 @@ footer {
     border-bottom: 1px solid #88D1E4;
 }
 
-h3 {
+.list-user-section h3 {
     height: 1.5em;
 }
 
@@ -298,6 +295,43 @@ h3 {
     gap: 1.7em;
 }
 
+.social-media-icons a {
+  color: inherit;
+}
+
+.social-media-icons a i {
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.social-media-icons a i:hover {
+  color: #0000ff;
+}
+
+.social-media-icons a:hover i.fa-facebook {
+  color: #0866ff;
+}
+
+.social-media-icons a:hover i.fa-instagram {
+  color: #ed00be;
+}
+
+.social-media-icons a:hover i.fa-x-twitter {
+  color: #1da1f2;
+}
+
+.social-media-icons a:hover i.fa-pinterest {
+  color: #e60023;
+}
+
+.social-media-icons a:hover i.fa-youtube {
+  color: #ff0000;
+}
+
+.social-media-icons a:hover i.fa-linkedin {
+  color: #0a66c2;
+}
+
 .social-media-icons i {
     font-size: 1.3em;
     cursor: pointer;
@@ -310,6 +344,12 @@ h3 {
 /*------------------------------*/
 /*----- RESPONSIVE DESIGN ------*/
 /*------------------------------*/
+
+@media screen and (max-width: 1127px) {
+    .suscription-div input[type=text] {
+        width: 12em;
+    }
+}
 
 @media screen and (max-width: 897px) {
     header {
@@ -398,6 +438,10 @@ h3 {
         width: 100%;
     }
 
+    .suscription-div {
+        padding: 8px 24px 24px 0;
+    }
+
     .suscription-div input[type=text] {
         width: 30em;
     }
@@ -435,6 +479,7 @@ h3 {
         width: 8em;
         border: 2.5px solid #000;
         border-radius: 0.8em;
+        background-color: #fff;
     }
 
     .display-account-buttons .sign-up {
@@ -534,8 +579,9 @@ h3 {
     }
 
     .display-menu {
+        z-index: 500;
         position: fixed;
-        top: 8em;
+        top: 7em;
         right: -4.5em;
     }
 

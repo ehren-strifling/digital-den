@@ -6,7 +6,7 @@
         <meta name="description" content="Joseph Terrado: Web developer">
         <meta name="keywords" content="web developer, web, developer, front-end, html, css, javascript, react, sql">
         <link rel="stylesheet" href="./assets/style/index.css" media="all">
-        <link rel="shortcut icon" href="./assets/images/logo.png">
+        <link rel="shortcut icon" href="./assets/images/logo.png?v=2">
         <title>Home | Digital Den</title>
         <script src="assets/scripts/login.js" defer></script>
         <script src="assets/scripts/column-menu.js" defer></script>
@@ -38,16 +38,92 @@
                 </div>
                 <div class="access-div">
                     <div class="user-icon-div"><div><i class="fa-regular fa-user"></i></div></div>
-                    <button class="log-in remove-on-login" onclick="openLoginPrompt()">Login</button>
-                    <button class="sign-up remove-on-login" onclick="openLoginPrompt()">Sign up</button>
+                    <button class="log-in remove-on-login">Login</button>
+                    <button class="sign-up remove-on-login">Sign up</button>
                     <div class="display-account-buttons">
-                        <button class="log-in remove-on-login" onclick="openLoginPrompt()">Login</button>
-                        <button class="sign-up remove-on-login" onclick="openLoginPrompt()">Sign up</button>
+                        <button class="log-in remove-on-login">Login</button>
+                        <button class="sign-up remove-on-login">Sign up</button>
                     </div>
                 </div>
             </div>
         </header>
-        <main></main>
+        <main>
+            <section class="hero-banner">
+                <h2 class="h2">Unleash the Power of Innovation: Explore Cutting-Edge Electronics at Digital Den!</h2>
+                <button class="shop">Shop now</button>
+            </section>
+           
+            <section class="container shop-black-friday">
+                <h3 class="h3">Shop Black Friday Deals</h3>
+                <div class="display">
+                    <figure class="sale headphones">
+                        <img src="./assets/images/headphones.jpg" alt="Headphones">
+                        <figcaption>Save up to 30% on headphones</figcaption>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(234 reviews)</span>
+                        <figcaption>Shop now</figcaption>
+                    </figure>
+                    <figure class="sale watch">
+                        <img src="./assets/images/apple-watch.jpg" alt="Watch">
+                        <figcaption>Save up to $50 on watches</figcaption>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(489 reviews)</span>
+                        <figcaption>Shop now</figcaption>
+                    </figure>
+                    <figure class="sale laptop">
+                        <img src="./assets/images/laptop2.jpg" alt="Laptop">
+                        <figcaption>Save up to $300 on laptops</figcaption>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(654 reviews)</span>
+                        <figcaption>Shop now</figcaption>
+                    </figure>
+                    <figure class="sale controller">
+                        <img src="./assets/images/controller2.jpg" alt="Controller">
+                        <figcaption>Save up to 20% on controllers</figcaption>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(129 reviews)</span>
+                        <figcaption>Shop now</figcaption>
+                    </figure>
+                </div>
+              </section>
+              <section class="container shop-by-category">
+                <h4 class="h4">Shop by Category</h4>
+                <div class="grid">
+                    <figure class="tvs">
+                        <img src="./assets/images/tvs.jpg" alt="Television">
+                        <figcaption>TVs</figcaption>
+                    </figure>
+                    <figure class="computer">
+                        <img src="./assets/images/mouse-key.jpg" alt="Computer Accessories">
+                        <figcaption>Computer Accessories</figcaption>
+                    </figure>
+                    <figure class="camera">
+                        <img src="./assets/images/camera.jpg" alt="Camera">
+                        <figcaption>Cameras</figcaption>
+                    </figure>
+                    <figure class="speakers">
+                        <img src="./assets/images/portable.jpg" alt="Speakers">
+                        <figcaption>Portable Speakers</figcaption>
+                    </figure>
+                    <figure class="cellphone">
+                        <img src="./assets/images/cell.jpg" alt="Cellphone">
+                        <figcaption>Cellphones</figcaption>
+                    </figure>
+                    <figure class="video-game">
+                        <img src="./assets/images/console.jpg" alt="Consoles">
+                        <figcaption>Video Game Consoles</figcaption>
+                    </figure>
+                    <figure class="smart-home">
+                        <img src="./assets/images/smart-home.jpg" alt="Smart Home Devices">
+                        <figcaption>Smart Home </figcaption>
+                    </figure>
+                    <figure class="drones">
+                        <img src="./assets/images/drones.jpg" alt="Drones">
+                        <figcaption>Drones</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
         <footer>
             <div class="container flex-footer">
                 <section class="user-help-section">
@@ -124,11 +200,12 @@
                             <input type="submit">
                         </form>
                         <div class="social-media-icons">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-x-twitter"></i>
-                            <i class="fa-brands fa-pinterest"></i>
-                            <i class="fa-brands fa-youtube"></i>
+                            <a href = "https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a href = "https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href = "https://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href = "https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href = "https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href = "https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </section>

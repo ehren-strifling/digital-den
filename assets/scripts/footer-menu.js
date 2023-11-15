@@ -27,4 +27,12 @@ arrowIcon.forEach((arrowIcons, index) => {
     });
 });
 
+function adjustList() {
+    if (window.innerWidth > 527) {
+       userListItems.forEach(function(ul) {
+        ul.style.display = 'block';
+    }); 
+    }
+}
 
+onEvent(window, 'resize', adjustList)
