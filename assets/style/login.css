@@ -40,21 +40,30 @@
   text-align: center;
   margin-top:40px;
   font-size: 32px;
+  margin-bottom:18px;
 }
 
 .login-prompt-input {
   display:block;
   margin-inline: auto;
   border: 1px solid #0000FF;
-  margin-top:20px;
+  margin-top:4px;
   width:384px;
   height:40px;
   font-size:16px;
   padding-left:12px;
 }
 
+.login-prompt-error {
+  color: #FF0000;
+  width: 384px;
+  margin-inline: auto;
+  margin-top:-2px;
+  height:24px;
+}
+
 .login-prompt-button-div {
-  margin-top:32px;
+  margin-top:24px;
   justify-content: center;
   display: flex;
 }
@@ -67,7 +76,7 @@
 }
 
 .login-prompt-forgot {
-  margin-top:36px;
+  margin-top:18px;
   color: #0000FF;
   text-decoration: underline;
   display:block;

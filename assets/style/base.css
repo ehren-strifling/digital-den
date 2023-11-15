@@ -17,6 +17,7 @@ body {
 .container{
     width: min(100% - 20em);
     margin-inline:auto;
+    padding: 1em 0.5em;
 }
 
 /*------------------------------*/
@@ -55,13 +56,20 @@ header {
 nav {
     order: 2;
     width: 31.3%;
+    margin-left:auto;
+}
+
+.display-menu {
+    display: none;
+    height: 6em;
+    width: auto;
 }
 
 .menu-icon {
     display: none;
 }
 
-ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -70,14 +78,15 @@ ul {
     gap: 2em;
 }
 
-a {
+nav a {
     text-decoration: none;
     font-family: var(--app-font-nunito);
     color: #000;
     transition: width 0.3s;
+    font-size: 18px;
 }
 
-a:hover {
+nav a:hover {
     color: #7ECF1E;
     border-bottom: 3px solid #7ECF1E;
 }
@@ -85,11 +94,13 @@ a:hover {
 .search-div {
     order: 3;
     width: 26.65%;
-    display: grid;
-    place-items: center;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.search-div div {
+.search-div .loupe {
     display: none;
     height: 2.85em;
     width: 2.85em;
@@ -113,13 +124,17 @@ a:hover {
     background-image: url(../images/search.png);
     background-repeat: no-repeat;
     background-size: 1.3em;
-    background-position: 10px 5px;
+    background-position: 10px 6.5px;
     padding-left: 3em;
     font-size: 15px;
 }
 
 .search-div input:focus {
     border: 3px solid #7ECF1E;
+}
+
+.display-input {
+    display: none;
 }
 
 .access-div {
@@ -130,6 +145,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     gap: 2em;
+}
+
+.display-account-buttons {
+    display: none;
 }
 
 .sign-up, .log-in {
@@ -162,25 +181,186 @@ a:hover {
 }
 
 .sign-up {
-    background: #008000;
+    background: #C1121F;
+    color: #fff;
 }
 
 .log-in {
-    background: #0000ff;
+    background: #03045E;
+}
+
+/*------------------------------*/
+/*------------ MAIN ------------*/
+/*------------------------------*/
+
+main {
+    height: 100vh;
+}
+
+/*------------------------------*/
+/*---------- FOOTER ------------*/
+/*------------------------------*/
+
+footer {
+    background-color: #F0F0F0;
+    min-height: 15vh;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-help-section {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-right: 1px solid;
+}
+
+.list-user-section {
+    flex-grow: 1;
+    flex-basis: 30%;
+    padding: 8px; 
+}
+
+.list-user-section ul {
+    list-style: none;
+    padding: 1em 0;
+    width: 100%;
+}
+
+.list-user-section li {
+    margin-bottom: 0.8em;
+    text-align: left;
+    font-size: 14px;
+}
+
+.list-user-section a {
+    text-decoration: none;
+    color: #000;
+}
+
+.list-user-section a:hover {
+    color: #88D1E4;
+    border-bottom: 1px solid #88D1E4;
+}
+
+h3 {
+    height: 1.5em;
+}
+
+.user-contact-section {
+    width: 30%;
+}
+
+.suscription-div {
+    padding: 8px 24px 24px;
+    height: 50%;
+}
+
+.suscription-div h4 {
+    margin-bottom: 1em;
+}
+
+.suscription-div p {
+    font-size: 12px;
+    margin-bottom: 2em;
+}
+
+.suscription-div input {
+    height: 3em;
+}
+
+.suscription-div form {
+    margin-bottom: 2em;
+}
+
+.suscription-div input[type=text] {
+    padding-left: 1em;
+    border: 1px solid transparent;
+}
+
+.suscription-div input[type=text]:focus {
+    border: 1px solid #000;
+}
+
+.suscription-div input[type=submit] {
+    background-color: #88D1E4;
+    width: 5em;
+    position: relative;
+    left: -3px;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.7em;
+}
+
+.social-media-icons i {
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.fa-arrow-down {
+    display: none;
 }
 
 /*------------------------------*/
 /*----- RESPONSIVE DESIGN ------*/
 /*------------------------------*/
 
-@media screen and (max-width: 835px) {
-    ul {
-        display: none;
+@media screen and (max-width: 897px) {
+    header {
+        overflow: visible;
+    }
+
+    .display-menu {
+        position: relative;
+        top: 1em;
+        right: -1em;
+        margin-right: min(8em);
+    }
+
+    .display-menu ul {
+        padding: 5px 0;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        height: auto;
+        min-width: 9em;
+        border-radius: 1em;
+        gap: 8px;
+        border: 2px solid #000;
+    }
+
+    nav li {
+        height: 2em;
+        width: 6em;
+        display: grid;
+        place-items: center;
+        border-radius: 1em;
+    }
+
+    nav li:hover {
+        background-color: #88D1E4;
+    }
+
+    nav a:hover {
+        border: transparent;
+        color: #000;
     }
 
     nav {
         width: 14.3%;
         order: 3;
+    }
+
+    nav ul {
+        display: none;
     }
 
     .menu-icon {
@@ -203,10 +383,33 @@ a:hover {
     .search-div input {
         width: 90%;
     }
+
+    .flex-footer {
+        flex-direction: column;
+    }
+
+    .user-help-section {
+        width: 100%;
+        border-right: transparent;
+        border-bottom: 1px solid;
+        margin-bottom: 3em;
+    }
+
+    .user-contact-section {
+        width: 100%;
+    }
+
+    .suscription-div input[type=text] {
+        width: 30em;
+    }
+
+    .suscription-div input[type=submit] {
+        width: 7em;
+    }
 }
 
 @media screen and (max-width: 803px) {
-    .sign-up, .log-in {
+    header .sign-up, header .log-in {
         display: none;
     }
 
@@ -221,22 +424,187 @@ a:hover {
     .user-icon-div {
         display: grid;
     }
+
+    .display-account-buttons {
+        display: none;
+        place-items: center;
+        position: fixed;
+        top: 8em;
+        right: 4em;
+        z-index: 100;
+        height: 7em;
+        width: 8em;
+        border: 2.5px solid #000;
+        border-radius: 0.8em;
+    }
+
+    .display-account-buttons .sign-up {
+        display: block;
+    }
+
+    .display-account-buttons .log-in {
+        display: block;
+    }
+
+    .suscription-div input[type=text] {
+        width: 23.5em;
+    }
 }
 
 @media screen and (max-width: 526px) {
-    nav, .access-div, .search-div {
-        width: 15%;
-    }
-
     .logo {
-        width: 55%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .search-div div {
+    .logo img {
+        zoom: 50%;
+    }
+
+    nav, .access-div, .search-div {
+        width: 20%;
+    }
+    .search-div .loupe {
         display: grid;
     }
 
-    .search-div input {
+    .display-input {
         display: none;
+        position: fixed;
+        top: 8em;
+        right: 4em;
+        z-index: 100;
+    }
+
+    .display-input .search2 { 
+        background-color: #fff;
+        border-radius: 1em;
+        border: 3px solid #000;
+        height: 2.5em;
+        width: 70%;
+        background-image: url(../images/search.png);
+        background-repeat: no-repeat;
+        background-size: 1.3em;
+        background-position: 10px 6.5px;
+        padding-left: 3em;
+        font-size: 15px;
+        position: relative;
+    }
+
+    .search-div .search1 {
+        display: none;
+    }
+
+    .user-help-section {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .list-user-section {
+        flex-basis: 0;
+        width: 100%;
+        flex-grow: 0;
+    }
+
+    .fa-arrow-down {
+        display: block;
+        position: absolute;
+        right: 1.5em;
+        cursor: pointer;
+    }
+
+    .list-user-section ul {
+        display: none;
+    }
+
+    .suscription-div input[type=text] {
+        width: 15.5em;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    header {
+        height: 15vh;
+    }
+
+    .flexbox {
+        width: min(100% - 2em);
+        height: 15vh;
+    }
+
+    .display-menu {
+        position: fixed;
+        top: 8em;
+        right: -4.5em;
+    }
+
+    .logo {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-left: 1em;
+        height: 15vh;
+    }
+
+    nav, .access-div, .search-div {
+        width: 20%;
+        height: 15vh;
+    }
+
+    nav {
+        display: grid;
+        place-items: center;
+    }
+
+    .suscription-div {
+        padding: 8px 15px 15px;
+    }
+
+    .suscription-div input[type=text] {
+        width: 15.5em;
+    }
+
+    .suscription-div input[type=submit] {
+        width: 5em;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .display-menu {
+        top: 6em;
+    }
+
+    .display-input {
+        top: 6em;
+    }
+
+    .display-account-buttons {
+        top: 6em;
+        right: 1.5em;
+    }
+
+    .suscription-div input[type=text] {
+        width: 13em;
+    }
+
+    .suscription-div input[type=submit] {
+        width: 5em;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    header {
+        height: 18vh;
+    }
+
+    .flexbox, .logo, nav, .search-div, .access-div, .menu-icon {
+        height: 18vh;
+    }
+
+    .flexbox {
+        width: min(100% - 2em);
     }
 }
