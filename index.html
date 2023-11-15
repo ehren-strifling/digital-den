@@ -2,13 +2,18 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <meta name="v1ewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Joseph Terrado: Web developer">
         <meta name="keywords" content="web developer, web, developer, front-end, html, css, javascript, react, sql">
         <link rel="stylesheet" href="./assets/style/index.css" media="all">
-        <title>Home Page</title>
+        <link rel="shortcut icon" href="./assets/images/logo.png">
+        <title>Home | Digital Den</title>
+        <script src="assets/scripts/login.js" defer></script>
+        <script src="assets/scripts/column-menu.js" defer></script>
+        <script src="assets/scripts/footer-menu.js" defer></script>
     </head>
     <body>
+<<<<<<< HEAD
         <header></header>
         <main>
             <div class="hero-banner">
@@ -79,4 +84,127 @@
             </div>
         </main>
         <footer></footer> 
+=======
+        <header>
+            <div class="flexbox">
+                <div class="logo"><img src="./assets/images/logo.png" alt="webpage logo"></div>
+                <nav>
+                    <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+                    <div class="display-menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./product.html">Products</a></li>
+                            <li><a href="">About Us</a></li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./product.html">Products</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="search-div">
+                    <div class="loupe"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="search" placeholder="Search" class="search1">
+                    <div class="display-input"><input type="search" placeholder="Search" class="search2"></div>
+                </div>
+                <div class="access-div">
+                    <div class="user-icon-div"><div><i class="fa-regular fa-user"></i></div></div>
+                    <button class="log-in remove-on-login" onclick="openLoginPrompt()">Login</button>
+                    <button class="sign-up remove-on-login" onclick="openLoginPrompt()">Sign up</button>
+                    <div class="display-account-buttons">
+                        <button class="log-in remove-on-login" onclick="openLoginPrompt()">Login</button>
+                        <button class="sign-up remove-on-login" onclick="openLoginPrompt()">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main></main>
+        <footer>
+            <div class="container flex-footer">
+                <section class="user-help-section">
+                    <div class="list-user-section">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <h3>Laptops</h3>
+                        <ul>
+                            <li><a href="">TechVista</a></li>
+                            <li><a href="">QuantumBook</a></li>
+                            <li><a href="">CyberPulse</a></li>
+                            <li><a href="">NovaByte</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-user-section">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <h3>Gamer</h3>
+                        <ul>
+                            <li><a href="">Novice</a></li>
+                            <li><a href="">Amateur</a></li>
+                            <li><a href="">Professional</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-user-section">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <h3>Headphones</h3>
+                        <ul>
+                            <li><a href="">Earbuds</a></li>
+                            <li><a href="">Over-Eear</a></li>
+                            <li><a href="">On-Ear</a></li>
+                            <li><a href="">Gaming Headsets</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-user-section">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <h3>Smartphones</h3>
+                        <ul>
+                            <li><a href="">BlazeLink</a></li>
+                            <li><a href="">SwiftPulse</a></li>
+                            <li><a href="">InfinityVibe</a></li>
+                            <li><a href="">HyperSync</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-user-section">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <h3>Accessories</h3>
+                        <ul>
+                            <li><a href="">Chargers</a></li>
+                            <li><a href="">Phone Cases</a></li>
+                            <li><a href="">Screen Protectors</a></li>
+                            <li><a href="">SIM Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-user-section">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <h3>Offers</h3>
+                        <ul>
+                            <li><a href="">Black Friday</a></li>
+                            <li><a href="">Cyber Monday</a></li>
+                            <li><a href="">Christmas</a></li>
+                            <li><a href="">Students</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="user-contact-section">
+                    <div class="suscription-div">
+                        <section>
+                            <h4>Stay tuned for all our news</h4>
+                            <p>Sign up to stay in the loop about 
+                                the hottest deals, coolest new products, 
+                                and exclusive sales events</p>
+                        </section>
+                        <form>
+                            <input type="text" placeholder="Email">
+                            <input type="submit">
+                        </form>
+                        <div class="social-media-icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-pinterest"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer> 
+>>>>>>> acd6a4751e6b306462de227f5d906da85a259ab8
     </body>
