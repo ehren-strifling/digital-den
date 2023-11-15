@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root{
+    --app-header-color: #7f332f;
+    --app-header-font-color: #fff;
+    --app-footer-color: #F0F0F0;
+
     --app-body-bg:#13161c;
     --app-font: "Outfit", sans-serif;
     --white-bg-color:#fff;
@@ -28,7 +32,8 @@ header {
     height: 15vh;
     overflow: hidden;
     box-sizing: border-box;
-    background-color: #88D1E4;
+    background-color: var(--app-header-color);
+    color: var(--app-header-font-color);
 }
 
 .flexbox {
@@ -81,7 +86,7 @@ nav ul {
 nav a {
     text-decoration: none;
     font-family: var(--app-font-nunito);
-    color: #000;
+    color: inherit;
     transition: width 0.3s;
     font-size: 18px;
 }
@@ -158,13 +163,13 @@ nav a:hover {
     color: #FFF;
 }
 
-.user-icon-div {
+.user-icon-div, .user-logged-in-div {
     display: none;
     place-items: center;
     height: 15vh;
 }
 
-.user-icon-div div {
+.user-icon-div div, .user-logged-in-div div {
     display: grid;
     place-items: center;
     background-color: transparent;
@@ -175,9 +180,18 @@ nav a:hover {
     cursor: pointer;
 }
 
+.user-logged-in-div div {
+  border-color: #14ff14;
+}
+
 .user-icon-div i {
     color: #ffff14;
     font-size: 1.25em;
+}
+
+.user-logged-in-div i {
+  color: #14ff14;
+  font-size: 1.25em;
 }
 
 .sign-up {
@@ -197,7 +211,7 @@ main {
 /*------------------------------*/
 
 footer {
-    background-color: #F0F0F0;
+    background-color: var(--app-footer-color);
     min-height: 15vh;
 }
 

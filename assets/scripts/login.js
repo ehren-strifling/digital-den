@@ -82,10 +82,13 @@ function removeLoginButtons() {
   [...document.getElementsByClassName("remove-on-login")].forEach(e=>{
     e.style.display = "none";
   });
-  let accessDiv = document.querySelector("header .access-div");
-  if (accessDiv) {
-    accessDiv.style.display = "none";
-  }
+  [...document.getElementsByClassName("user-logged-in-div")].forEach (e => {
+    e.style.display = "grid";
+  });
+  // let accessDiv = document.querySelector("header .access-div");
+  // if (accessDiv) {
+  //   accessDiv.style.display = "none";
+  // }
 }
 
 
@@ -131,19 +134,19 @@ function createLoginPrompt() {
   let buttonDiv = document.createElement("div");
   buttonDiv.classList.add("login-prompt-button-div");
   
-  let signupButton = document.createElement("button");
-  signupButton.innerHTML = "Sign up";
-  signupButton.classList.add("login-prompt-button");
-  signupButton.classList.add("sign-up");
-  signupButton.addEventListener("click", signup);
-  buttonDiv.appendChild(signupButton);
-
   let loginButton = document.createElement("button");
   loginButton.innerHTML = "Login";
   loginButton.classList.add("login-prompt-button");
   loginButton.classList.add("log-in");
   loginButton.addEventListener("click", signup);
   buttonDiv.appendChild(loginButton);
+  
+  let signupButton = document.createElement("button");
+  signupButton.innerHTML = "Sign up";
+  signupButton.classList.add("login-prompt-button");
+  signupButton.classList.add("sign-up");
+  signupButton.addEventListener("click", signup);
+  buttonDiv.appendChild(signupButton);
 
   div.appendChild(buttonDiv);
 
