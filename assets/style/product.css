@@ -148,7 +148,7 @@
     margin-bottom: 10px;
 }
 
-section{
+.sections-detail-products{
     margin-top: 80px;
 }
 
@@ -181,4 +181,29 @@ section{
 
 .product-specifications-tables div h2{
     margin-bottom: 20px;
+}
+
+
+/*------------------------------*/
+/*----- RESPONSIVE DESIGN ------*/
+/*------------------------------*/
+@media screen and (max-width: 1028px) {
+    
+}
+
+
+@media screen and (max-width: 897px) {
+    
+}
+
+@media screen and (max-width: 803px) {
+    
+}
+
+@media screen and (max-width: 526px) {
+
+}
+
+@media screen and (max-width: 410px) {
+
 }

@@ -288,9 +288,6 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 1.7em;
-
-    /* width:max-content;
-    margin-inline: auto; */
 }
 
 .social-media-icons a {
