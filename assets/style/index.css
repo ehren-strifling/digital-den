@@ -16,7 +16,7 @@ main {
     background-size: cover;
 }
 
-.hero-banner h3 {
+h2 {
     position: absolute;
     font-size: 38px;
     font-weight: 700;
@@ -41,17 +41,19 @@ main {
     color: #fff;
 }
 
-/*** Section for the 3 images ***/
+/*** Section 2***/
 
-.container h3 {
-    font-size: 40px;
+h3 {
+    font-size: 45px;
     font-weight: 600;
     text-align: center;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    color: #BB0628;
 }
 
 .display {
     display: flex;
-    margin-top: 140px;
     height: 45rem;
     gap: 15px;
 }
@@ -60,45 +62,91 @@ main {
     width: 100%;
 }
 
-figure img {
+.display figure img {
     width: 100%;
     height: 30rem;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 0.2);
 }
 
-figcaption {
+.sale figcaption {
     margin-top: 10px;
     font-size: 18px;
     border-radius: 5px;
-    color: #0046BE;
+    color: #BB0628;
 }
 
-/***    Grid Section    ***/
+.sale figcaption:last-child {
+    color: #fff;
+    background-color: #0046BE;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/***    Section 3   ***/
+
+h4 {
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
 
 .grid {
     display: grid;
-    gap: 50px 130px;
+    gap: 50px 100px;
     grid-template-columns: auto auto auto auto;
-    padding: 40px;
+    padding: 80px;
     align-items: center;
     justify-content: center;
     background-color: #f2f1f1;
+    border-radius: 4px;
+    width: 100%;
+    height: 60rem;
+    margin-bottom: 100px;
+}
+
+.grid figure {
+    width: 14rem;
+    height: 14rem;
 }
 
 .grid img {
-    max-width: 14rem;
+    width: 14rem;
     height: 14rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 0.4);
 }
 
-
+.grid figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+}
 
 /*** Hover ***/
 
 .shop:hover {
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    background-color: #003faa;
+    background-color: #003896;
+}
+
+.sale figcaption:last-child:hover {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: #003896;
+}
+
+.sale img:hover, .grid img:hover {
+    color: #ffffff;
+    border: 1px solid #f2f1f1;
+}
+
+.grid figcaption:hover {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: #0047bd;
 }
