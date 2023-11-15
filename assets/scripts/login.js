@@ -82,10 +82,13 @@ function removeLoginButtons() {
   [...document.getElementsByClassName("remove-on-login")].forEach(e=>{
     e.style.display = "none";
   });
-  let accessDiv = document.querySelector("header .access-div");
-  if (accessDiv) {
-    accessDiv.style.display = "none";
-  }
+  [...document.getElementsByClassName("user-logged-in-div")].forEach (e => {
+    e.style.display = "grid";
+  });
+  // let accessDiv = document.querySelector("header .access-div");
+  // if (accessDiv) {
+  //   accessDiv.style.display = "none";
+  // }
 }
 
 
