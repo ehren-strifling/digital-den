@@ -10,9 +10,17 @@
     </head>
     <body>
         <header>
-            <div class="container flexbox">
+            <div class="flexbox">
                 <div class="logo"><img src="./assets/images/logo.png" alt="webpage logo"></div>
                 <nav>
+                    <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+                    <div class="display-menu">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./product.html">Products</a></li>
+                            <li><a href="">About Us</a></li>
+                        </ul>
+                    </div>
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./product.html">Products</a></li>
@@ -20,16 +28,23 @@
                     </ul>
                 </nav>
                 <div class="search-div">
-                    <input type="search" placeholder="Search">
+                    <div class="loupe"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="search" placeholder="Search" class="search1">
+                    <div class="display-input"><input type="search" placeholder="Search" class="search2"></div>
                 </div>
                 <div class="access-div">
-                    <button class="sign-up">Sign Up</button>
-                    <button class="log-in">Log In</button>
+                    <div class="user-icon-div"><div><i class="fa-regular fa-user"></i></div></div>
+                    <button class="log-in remove-on-login">Login</button>
+                    <button class="sign-up remove-on-login">Sign up</button>
+                    <div class="display-account-buttons">
+                        <button class="log-in remove-on-login">Login</button>
+                        <button class="sign-up remove-on-login">Sign up</button>
+                    </div>
                 </div>
             </div>
         </header>
         <main>
-                <section class="row container">
+                <section class="row container sections-detail-products">
                     <div class="column product-image ">
                         <!--Photo by Sound On: https://www.pexels.com/photo/white-wireless-headphones-3394650/-->
                         <figure class="flex-center">
@@ -84,7 +99,7 @@
                     </div>
                 </section>
 
-                <section class="product-specifications">
+                <section class="product-specifications sections-detail-products">
                     <div class="row container">
                         <div class="column product-description ">
                             <h3> Overview</h3>    
@@ -107,7 +122,7 @@
                     </div>
                 </section>
 
-                <section class="product-specifications-tables container">
+                <section class="product-specifications-tables container sections-detail-products">
                     <div>
                     <h2>Product Details</h2>
                     <table class="table">
@@ -166,7 +181,7 @@
                 </section>
         </main>
         <footer>
-            <div class="container flex-footer ">
+            <div class="container flex-footer">
                 <section class="user-help-section">
                     <div class="list-user-section">
                         <i class="fa-solid fa-arrow-down"></i>
@@ -241,11 +256,12 @@
                             <input type="submit">
                         </form>
                         <div class="social-media-icons">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-x-twitter"></i>
-                            <i class="fa-brands fa-pinterest"></i>
-                            <i class="fa-brands fa-youtube"></i>
+                            <a href = "https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a href = "https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href = "https://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href = "https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href = "https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href = "https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </section>
