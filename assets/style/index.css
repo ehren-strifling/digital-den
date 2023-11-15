@@ -89,6 +89,33 @@ h3 {
     text-align: center;
 }
 
+span {
+    display: inline;
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+.fa-star {
+    color: #fecf0a;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.fa-star::before, .star::after {
+    content: "\f005\f005\f005\f005\f089";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: inherit;
+}
+
+.fa-star::after {
+    content: "\f005";
+}
+
 /***    Section 3   ***/
 
 h4 {
