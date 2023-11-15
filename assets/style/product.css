@@ -192,85 +192,88 @@
 /*------------------------------*/
 /*----- RESPONSIVE DESIGN ------*/
 /*------------------------------*/
-@media screen and (max-width: 1224px) {
-    .reviews-section i {
-        font-size: 12px;
-    }
-    .review-stars{
-        width: 100px;
-    }
 
+@media screen and (max-width: 1846px) {
     .row .purchase-options{
-        height: 100px;
-        width: 100px;
+        height: 140px;
+        width: 140px;
     }
 
+    h2{
+        font-size: 22px;
+    }
+    .purchase-options i{
+        font-size: 15px;
+    }
+    .purchase-options p{
+        font-size: 15px;
+    }
+    .add-quantity-options {
+        width: 100%;
+        padding: 0 40px 0 40px;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 1698px) {
+    .row .purchase-options{
+        height: 120px;
+        width: 120px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+    .purchase-options i{
+        font-size: 15px;
+    }
+    .purchase-options p{
+        font-size: 15px;
+    }
+    .add-quantity-options {
+        width: 100%;
+        padding: 0 40px 0 40px;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+}
+@media screen and (max-width: 1599px) {
+    .row .purchase-options{
+        height: 105px;
+        width: 105px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
     .purchase-options i{
         font-size: 10px;
     }
     .purchase-options p{
         font-size: 10px;
     }
-    .product-image {
-        width: 60%;
-    }
-    
-    .product-overview{
-        width: 40%;
-        padding: 5px;
-        height: 500px;
-    }
-    
-    .product-image figure img{
-        height: 500px;
-        width: 70%;
-        border-radius: 15px;
-    }
-    
-    .product-image .left-arrow{
-        position: absolute;
-        top: 50%;
-        right: 83%;
-    }
-    
-    .product-image .right-arrow{
-        position: absolute;
-        top: 50%;
-        right: 45%;
-    }
-
-
-    .product-description {
-        width: 100%;
-    }
-
-    .table td{
-        border: 1px solid #000000;
-        width: 400px;
-        height: 40px;
-        text-align: center;
-        letter-spacing: 1px;
-        line-height: 30px;
-    }
-
     .add-quantity-options {
         width: 100%;
-        padding: 0 50px 0 50px;
+        padding: 0 40px 0 40px;
         display: flex;
         gap: 10px;
         justify-content: space-between;
     }
 
-    .quantity{
-        padding: 10px;
+}
+@media screen and (max-width: 1586px) {
+    h2{
+        font-size: 15px;
     }
 
-    .product-titles{
-        padding: 0 10px 0 10px;
-        width: 80%;
-    }
-    
+
 }
+
 
 @media screen and (max-width: 1477px) {
     .reviews-section i {
@@ -319,7 +322,6 @@
         right: 45%;
     }
 
-
     .product-description {
         width: 100%;
     }
@@ -351,6 +353,7 @@
     }
     
 }
+
 
 @media screen and (max-width: 1028px) {
     .reviews-section i {
