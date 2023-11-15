@@ -202,6 +202,10 @@ nav a:hover {
 .log-in {
     background: #03045E;
 }
+
+main {
+    overflow: hidden;
+}
 /*------------------------------*/
 /*---------- FOOTER ------------*/
 /*------------------------------*/
@@ -212,6 +216,7 @@ footer {
 }
 
 .flex-footer {
+    width: min(100% - 4em);
     display: flex;
     flex-direction: row;
 }
@@ -354,6 +359,12 @@ footer {
 /*----- RESPONSIVE DESIGN ------*/
 /*------------------------------*/
 
+@media screen and (max-width: 1127px) {
+    .suscription-div input[type=text] {
+        width: 12em;
+    }
+}
+
 @media screen and (max-width: 897px) {
     header {
         overflow: visible;
@@ -439,6 +450,10 @@ footer {
 
     .user-contact-section {
         width: 100%;
+    }
+
+    .suscription-div {
+        padding: 8px 24px 24px 0;
     }
 
     .suscription-div input[type=text] {
