@@ -466,6 +466,7 @@ footer {
         width: 8em;
         border: 2.5px solid #000;
         border-radius: 0.8em;
+        background-color: #fff;
     }
 
     .display-account-buttons .sign-up {
@@ -565,8 +566,9 @@ footer {
     }
 
     .display-menu {
+        z-index: 500;
         position: fixed;
-        top: 8em;
+        top: 7em;
         right: -4.5em;
     }
 
