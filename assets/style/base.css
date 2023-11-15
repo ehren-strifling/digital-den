@@ -447,6 +447,10 @@ h3 {
     .display-account-buttons .log-in {
         display: block;
     }
+
+    .suscription-div input[type=text] {
+        width: 23.5em;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -505,9 +509,24 @@ h3 {
         width: 100%;
         flex-grow: 0;
     }
+
+    .fa-arrow-down {
+        display: block;
+        position: absolute;
+        right: 1.5em;
+        cursor: pointer;
+    }
+
+    .list-user-section ul {
+        display: none;
+    }
+
+    .suscription-div input[type=text] {
+        width: 15.5em;
+    }
 }
 
-@media screen and (max-width: 410px) and (max-height: 600px) {
+@media screen and (max-width: 410px), (max-height: 600px) {
     header {
         height: 18vh;
     }
@@ -533,5 +552,17 @@ h3 {
     nav {
         display: grid;
         place-items: center;
+    }
+
+    .suscription-div {
+        padding: 8px 15px 15px;
+    }
+
+    .suscription-div input[type=text] {
+        width: 15.5em;
+    }
+
+    .suscription-div input[type=submit] {
+        width: 5em;
     }
 }
