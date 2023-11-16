@@ -186,7 +186,7 @@ nav a:hover {
 }
 
 .user-logged-in-div div {
-  border-color: #14ff14;
+  border-color: var(--app-header-font-color);
 }
 
 .user-icon-div i {
@@ -195,7 +195,7 @@ nav a:hover {
 }
 
 .user-logged-in-div i {
-  color: #14ff14;
+  color: var(--app-header-font-color);
   font-size: 1.25em;
 }
 
