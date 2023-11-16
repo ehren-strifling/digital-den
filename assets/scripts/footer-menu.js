@@ -32,6 +32,10 @@ function adjustList() {
        userListItems.forEach(function(ul) {
         ul.style.display = 'block';
     }); 
+    } else {
+        userListItems.forEach(function(ul) {
+            ul.style.display = 'none';
+        });
     }
 }
 

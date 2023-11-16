@@ -216,17 +216,19 @@ footer {
 }
 
 .flex-footer {
-    width: min(100% - 4em);
+    width: min(100%);
+    padding: 2em 5em ;
     display: flex;
     flex-direction: row;
 }
 
 .user-help-section {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     border-right: 1px solid;
+    padding: 0 5em;
 }
 
 .list-user-section {
@@ -262,7 +264,7 @@ footer {
 }
 
 .user-contact-section {
-    width: 30%;
+    width: 40%;
 }
 
 .suscription-div {
@@ -360,8 +362,12 @@ footer {
 /*------------------------------*/
 
 @media screen and (max-width: 1127px) {
-    .suscription-div input[type=text] {
-        width: 12em;
+    .flex-footer {
+        padding: 2em 1em;
+    }
+
+    .user-help-section {
+        padding: 0 3em;
     }
 }
 
@@ -445,7 +451,7 @@ footer {
         width: 100%;
         border-right: transparent;
         border-bottom: 1px solid;
-        margin-bottom: 3em;
+        margin-bottom: 2.5em
     }
 
     .user-contact-section {
@@ -453,11 +459,11 @@ footer {
     }
 
     .suscription-div {
-        padding: 8px 24px 24px 0;
+        padding: 8px 24px 24px 24px;
     }
 
     .suscription-div input[type=text] {
-        width: 30em;
+        width: 40%;
     }
 
     .suscription-div input[type=submit] {
@@ -506,6 +512,11 @@ footer {
 
     .suscription-div input[type=text] {
         width: 23.5em;
+    }
+
+    .user-help-section {
+        margin-bottom: 1.25em;
+        padding: 0 0 1.25em 24px;
     }
 }
 
