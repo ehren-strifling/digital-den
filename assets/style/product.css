@@ -29,6 +29,7 @@
 
 .product-description {
   margin: 60px;
+  width: 50%;
 }
 .product-image {
     width: 60%;
@@ -378,6 +379,9 @@
 @media screen and (max-width: 1369px){
     .description-row{
        flex-direction: column;
+    }
+    .product-description {
+      width: 100%;
     }
 }
 
