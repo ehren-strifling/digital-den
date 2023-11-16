@@ -24,10 +24,12 @@
     flex-direction: column;
 }
 .column{
-    height: 550px;
     border-radius: 15px;
 }
 
+.product-description {
+  margin: 60px;
+}
 .product-image {
     width: 60%;
 }
@@ -143,12 +145,6 @@
 
 .product-titles{
     padding: 0 50px 0 50px;
-}
-
-.product-description{
-    height: 260px;
-    padding: 60px;
-    width: 50%;
 }
 
 .product-specifications{
@@ -352,10 +348,6 @@
         right: 45%;
     }
 
-    .product-description {
-        width: 100%;
-    }
-
     .table td{
         border: 1px solid #000000;
         width: 400px;
@@ -387,22 +379,9 @@
     .description-row{
        flex-direction: column;
     }
-
-    .product-description{
-        height: 180px;
-        padding: 50px;
-    }
 }
 
 @media screen and (max-width: 1325px) {
-    .row .purchase-options{
-        height: 80px;
-        width: 80px;
-    }
-
-    .shipping-items{
-        font-size: px;
-    }
     .purchase-options p{
         font-size: 10px;
     }
@@ -432,10 +411,6 @@
         position: absolute;
         top: 50%;
         right: 45%;
-    }
-
-    .product-description {
-        width: 100%;
     }
 
     .table td{
@@ -501,8 +476,13 @@
     
     .product-image figure img{
         height: 540px;
-        width: 90%;
+        width: 100%;
         border-radius: 15px;
+    }
+
+    .sections-products-image-overview {
+      width: 90%;
+      min-width: 0;
     }
     
     .product-image .left-arrow{
@@ -525,9 +505,6 @@
         height: 45px;
         line-height: 45px;
         border-right: 1px solid #e6e6e6 ;
-    }
-    .product-description {
-        width: 100%;
     }
 
     .table td{

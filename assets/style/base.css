@@ -19,9 +19,15 @@ body {
 }
 
 .container{
-    width: min(100% - 20em);
+    width: calc(100% - 20em);
+    min-width: min(100%, 1080px);
     margin-inline:auto;
     padding: 1em 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
 }
 
 /*------------------------------*/
@@ -68,6 +74,7 @@ nav {
     display: none;
     height: 6em;
     width: auto;
+    color: #000;
 }
 
 .menu-icon {
@@ -84,9 +91,7 @@ nav ul {
 }
 
 nav a {
-    text-decoration: none;
     font-family: var(--app-font-nunito);
-    color: inherit;
     transition: width 0.3s;
     font-size: 18px;
 }
@@ -249,11 +254,6 @@ footer {
     font-size: 14px;
 }
 
-.list-user-section a {
-    text-decoration: none;
-    color: #000;
-}
-
 .list-user-section a:hover {
     color: #88D1E4;
     border-bottom: 1px solid #88D1E4;
@@ -311,12 +311,7 @@ footer {
     gap: 1.7em;
 }
 
-.social-media-icons a {
-  color: inherit;
-}
-
 .social-media-icons a i {
-  text-decoration: none;
   transition: color 0.25s;
 }
 
